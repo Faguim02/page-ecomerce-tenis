@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: sans-serif;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    border-bottom: 1px solid hsl(0, 0%, 90%);
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-left: 100px;
+}
+a{
+    text-decoration: none;
+    color: hsl(0, 0%, 50%);
+    margin-left: 25px;
+}
+#headerUser{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 80px;
+}
+.buttonHeader{
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    margin-right: 20px;
+}
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 22px;
+}
+#Images{
+    display: flex;
+    flex-direction: column;
+}
+#imageProduct{
+    width: 400px;
+    height: 400px;
+    object-fit: contain;
+    border-radius: 12px;
+}
+.Thumb{
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin-top: 22px;
+    margin-right: 22px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.Thumb:hover{
+    transform: rotate(20deg);
+}
+#productMain{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 400px;
+}
+#mark{
+    color: hsl(26, 100%, 55%);
+    font-size: 10pt;
+}
+#title{
+    font-size: 26pt;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+#about{
+    margin-bottom: 20px;
+    color: hsl(0, 0%, 40%);
+}
+#campPrice{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 5px;
+}
+#descont{
+    margin-left: 10px;
+    background-color: hsl(0, 0%, 90%);
+    color: hsl(26, 100%, 55%);
+    padding: 4px 10px 4px 10px;
+    border-radius: 5px;
+    font-size: 10pt;
+}
+#AddCartCamp{
+    display: flex;
+    flex-direction: row;
+    height: 45px;
+    margin-top: 35px;
+}
+#quantidade{
+    display: flex;
+    background-color: hsl(0, 0%, 90%);
+    width: 45%;
+    margin-right: 10px;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    border-radius: 10px;
+}
+.updateValue{
+    width: 40%;
+    height: 100%;
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    font-weight: bold;
+    color: hsl(26, 100%, 55%);
+    font-size: 18pt;
+    transition: 0.2s;
+    border-radius: 10px;
+}
+.updateValue:hover{
+    background-color: hsl(0, 0%, 80%);
+}
+#buttonAdd{
+    width: 45%;
+    border-radius: 10px;
+    color: white;
+    background-color: hsl(26, 100%, 55%);
+    border: 0;
+    outline: 0;
+    display: flex;
+    align-items: center;
+    transition: 0.2s;
+    justify-content: center;
+    cursor: pointer;
+}
+#buttonAdd:hover{
+    background-color: hsl(26, 88%, 43%);
+}
+#iconCart{
+    filter: invert(2000%) sepia(1000%) saturate(00%) hue-rotate(147deg) brightness(303%) contrast(102%);
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+#menu{
+    display: none;
+}
+
+@media screen and (max-width: 860px) {
+    #menu{
+        display: flex;
+        background-color: transparent;
+        margin-right: 15px;
+        border: 0;
+        outline: 0;
+    }
+    a{
+        display: none;
+    }
+    main{
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 30px;
+    }
+}
+@media screen and (max-width: 450px) {
+    #productMain{
+        width: 300px;
+    }
+    .Thumb{
+        width: 60px;
+        height: 60px;
+        margin-right: 12px;
+        border-radius: 4px;
+        margin-top: 0px;
+    }
+    main{
+        padding: 0;
+    }
+    #imageProduct{
+        width: 300px;
+    }
+    nav{
+        margin-left: 10px;
+    }
+    #iconCart{
+        display: none;
+    }
+    #AddCartCamp{
+        padding-bottom: 30px;
+    }
+}

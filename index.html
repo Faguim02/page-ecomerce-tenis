@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>E-commerce product page</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <button id="menu">
+        <img src="./images/icon-menu.svg" alt="menu"/>
+      </button>
+      <img src="./images/logo.svg" alt="logo" style="margin-right: 25px;">
+      <a href="">Coleções</a>
+      <a href="">Mascolinos</a>
+      <a href="">Femininos</a>
+      <a href="">Sobre</a>
+      <a href="">Contato</a>
+    </nav>
+    <section id="headerUser">
+      <button class="buttonHeader">
+        <img src="./images/icon-cart.svg" alt="cart"/>
+      </button>
+      <button class="buttonHeader">
+        <img src="./images/image-avatar.png" alt="avatar" width="50px"/>
+      </button>
+    </section>
+  </header>
+
+  <main>
+    <figure id="Images">
+      <section id="campImage">
+        <img src="./images/image-product-1.jpg" alt="principal" id="imageProduct">
+      </section>
+      <section id="Thumbs">
+        <img src="./images/image-product-1-thumbnail.jpg" alt="miniatura" class="Thumb" onclick="image1()">
+        <img src="./images/image-product-2-thumbnail.jpg" alt="miniatura" class="Thumb" onclick="image2()">
+        <img src="./images/image-product-3-thumbnail.jpg" alt="miniatura" class="Thumb" onclick="image3()">
+        <img src="./images/image-product-4-thumbnail.jpg" alt="miniatura" class="Thumb" onclick="image4()">
+      </section>
+    </figure>
+
+    <article id="productMain">
+      <span id="mark">SNEAKER COMPANY</span>
+      <h1 id="title">Tenis Fall edição elimitada</h1>
+      <p id="about">
+        estes tênis de perfil baixo são o seu companheiro casual perfeito. Apresenta uma sola externa de borracha durável.
+      </p>
+      <section id="campPrice">
+        <h3 id="price">$125,00</h3>
+        <span id="descont">50%</span>
+      </section>
+      <p id="priceNotDescont">$250,00</p>
+
+      <section id="AddCartCamp">
+        <div id="quantidade">
+          <button class="updateValue" onclick="handleSubtrair()">-</button>
+          <p id="valueItens">0</p>
+          <button class="updateValue" onclick="handleAdd()">+</button>
+        </div>
+        <button id="buttonAdd"> <img src="./images/icon-cart.svg" alt="cart" id="iconCart"/> Adicionar ao carrinho</button>
+      </section>
+
+    </article>
+  </main>
+</body>
+</html>
